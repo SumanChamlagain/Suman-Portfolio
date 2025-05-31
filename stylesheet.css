@@ -1,0 +1,115 @@
+/* General Body Styling */
+body {
+  background-color: purple;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+/* Navigation */
+.nav {
+  margin-bottom: 20px;
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.nav a {
+  margin-right: 30px;
+  font-size: 24px;
+  text-decoration: underline;
+  color: #b366ff;
+}
+
+/* Hero Section */
+.hero-section {
+  max-width: 600px;
+  flex: 2;
+}
+
+.hero-section h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00cccc;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #00aaaa;
+}
+
+/* Photo Section */
+.photo-section {
+  flex-shrink: 0;
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Page Sections */
+.page-section {
+  background-color: #3b2461;
+  padding: 40px;
+  margin: 20px 40px;
+  border-radius: 10px;
+  color: white;
+  scroll-margin-top: 80px;
+}
+
+.page-section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.page-section p, .page-section ul {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.page-section ul {
+  padding-left: 20px;
+}
+
+/* Make the Page Scrollable */
+html {
+  scroll-behavior: smooth;
+}
